@@ -1,4 +1,4 @@
-alpone-nginx:
+alpine-nginx:
   build: .
   volumes:
    - ./volumes/etc/nginx/conf.d:/etc/nginx/conf.d
