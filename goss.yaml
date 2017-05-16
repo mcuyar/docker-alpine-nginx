@@ -1,0 +1,26 @@
+file:
+  /var/log/nginx/access.log:
+    exists: true
+  /var/log/nginx/error.log:
+    exists: true
+package:
+  nginx:
+    installed: true
+    versions:
+    - 1.12.0-r2
+port:
+  tcp:80:
+    listening: true
+    ip:
+    - 0.0.0.0
+process:
+  nginx:
+    running: true
+http:
+  http://localhost:
+    status: 200
+    allow-insecure: false
+    no-follow-redirects: false
+    timeout: 5000
+    body:
+    - Nginx Is Working!
