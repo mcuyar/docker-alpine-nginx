@@ -8,6 +8,8 @@ package:
     installed: true
     versions:
     - 1.12.0-r2
+  bash:
+    installed: true
 port:
   tcp:80:
     listening: true
