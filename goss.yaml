@@ -7,7 +7,7 @@ package:
   nginx:
     installed: true
     versions:
-    - 1.14.0-r0
+    - 1.12.2-r3
   bash:
     installed: true
 port:

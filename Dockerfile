@@ -10,7 +10,7 @@ MAINTAINER Matthew Cuyar <matt@enctypeapparel.com>
 ##/
  # Install Nginx
  #/
-RUN apk --no-cache --update --repository=http://dl-4.alpinelinux.org/alpine/edge/testing add nginx
+RUN apk --no-cache --update --repository=http://dl-4.alpinelinux.org/alpine/v3.7/main add nginx
 
 ##/
  # Clean default Nginx site folder
